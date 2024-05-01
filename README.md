@@ -40,32 +40,32 @@ EN: Java Programming - Lab 3, tasks to be solved:
 
 1. The function f(x) = ax^2 + bx + c has a graph of a parabola with vertex coordinates. Define a class Parabola whose members will be:
 
-   - 3 int variables representing the coefficients a, b, and c;
+- 3 int variables representing the coefficients a, b, and c;
 
-   - a constructor with 3 int parameters;
+- a constructor with 3 int parameters;
 
-   - a method that calculates and returns the vertex of the parabola;
+- a method that calculates and returns the vertex of the parabola;
 
-   - override the toString() method from the Object class to return a String in the form f(x) = ax^2 + bx + c, where the characteristics a, b, and c of the parabola will be replaced with the actual values, and the method will be used to display the parabola as a function;
+- override the toString() method from the Object class to return a String in the form f(x) = ax^2 + bx + c, where the characteristics a, b, and c of the parabola will be replaced with the actual values, and the method will be used to display the parabola as a function;
 
-   - a method that receives another parabola as a parameter and returns the coordinates of the midpoint of the line segment connecting the vertex of the current parabola with the vertex of the parabola passed as a parameter;
+- a method that receives another parabola as a parameter and returns the coordinates of the midpoint of the line segment connecting the vertex of the current parabola with the vertex of the parabola passed as a parameter;
 
-   - a static method that receives two parabolas as parameters and calculates the length of the line segment connecting the vertices of the two parabolas;
+- a static method that receives two parabolas as parameters and calculates the length of the line segment connecting the vertices of the two parabolas;
 
-   - a method that receives another parabola as a parameter and returns the length of the line segment connecting the vertex of the current parabola with the vertex of the parabola passed as a parameter, using the static method Math.hypot;
+- a method that receives another parabola as a parameter and returns the length of the line segment connecting the vertex of the current parabola with the vertex of the parabola passed as a parameter, using the static method Math.hypot;
 
-   - a static method that receives two parabolas as parameters and calculates the length of the line segment connecting the vertices of the two parabolas, using the static method Math.hypot.
+- a static method that receives two parabolas as parameters and calculates the length of the line segment connecting the vertices of the two parabolas, using the static method Math.hypot.
 
 The input file in.txt contains multiple lines, with each line containing the coefficients of a parabola. Read the information from the input file and for each line, create an object of type Parabola which will be added to a List collection. Traverse the collection and for each element, display the parabola as a function and then display the vertex of the parabola. For two parabolas from the collection, display the midpoint of the line segment connecting their vertices and the length of the line segment connecting their vertices by calling the methods developed in the Parabola class.
 
 2. Write a program that reads information about products from the file products.csv related to the products in a store. Each line contains: the product name, price (real number), quantity (integer), expiration date (LocalDate). The four elements are separated by the character "," (sugar, 1.5, 50, 2024-02-25). For each read line, create an object of type Product which will be added to a collection of List objects. Define a class Product that will contain: private member variables corresponding to the three elements describing a product, at least one constructor, getters, and setters as needed, and override the toString() method from the Object class, a method that will be used to display the products. Implement a program that will have a menu and will implement the following requirements:
 
-   - display all products from the List collection;
+- display all products from the List collection;
 
-   - display expired products;
+- display expired products;
 
-   - sell a product, which can only be done if there is enough quantity in stock. If the product reaches zero quantity, remove it from the list. In the Product class, declare a static variable sales which will be updated with each sale of a product, taking into account the price of the sold product and the quantity sold.
+- sell a product, which can only be done if there is enough quantity in stock. If the product reaches zero quantity, remove it from the list. In the Product class, declare a static variable sales which will be updated with each sale of a product, taking into account the price of the sold product and the quantity sold.
 
-   - display products with the minimum price (there can be multiple with the same price);
+- display products with the minimum price (there can be multiple with the same price);
 
-   - save products with a quantity less than a value read from the keyboard to an output file.
+- save products with a quantity less than a value read from the keyboard to an output file.
